@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>Espaço Pet - Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .message {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Espaço Pet - Página Inicial</h1>
+
+    <h2>Cadastrar Cliente</h2>
+    <form action="cadastrar_cliente.php" method="post">
+        <label for="nome_cliente">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente" name="nome_cliente" required>
+        <label for="endereco_cliente">Endereço:</label>
+        <input type="text" id="endereco_cliente" name="endereco_cliente">
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Cadastrar Pet</h2>
+    <form action="cadastrar_pet.php" method="post">
+        <label for="nome_pet">Nome do Pet:</label>
+        <input type="text" id="nome_pet" name="nome_pet" required>
+        <label for="cliente_id">ID do Cliente:</label>
+        <input type="number" id="cliente_id" name="cliente_id" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Criar Consulta</h2>
+    <form action="criar_consulta.php" method="post">
+        <label for="nome_cliente_consulta">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente_consulta" name="nome_cliente" required>
+        <button type="submit">Criar Consulta</button>
+    </form>
+
+    <h2>Consultar ID do Cliente</h2>
+    <form action="consultar_cliente.php" method="post">
+        <label for="nome_cliente_consultar">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente_consultar" name="nome_cliente" required>
+        <button type="submit">Consultar ID</button>
+    </form>
+</body>
+</html>
+</meta>
